@@ -1,0 +1,595 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Names Database Entries
+;;
+;; Holds non-localised Latin names for settlements and characters.  These are arranged on
+;; a per faction basis.
+;;
+;; Entries are specified by the following syntax:
+;;
+;; faction: <faction name>
+;;	settlements
+;;		<settlement names list>
+;;	characters
+;;		<character names list>
+;;
+;; faction ... etc
+
+
+
+;; Sicily
+
+;; Italy
+faction: romans_senate
+
+	characters
+		Amulius
+		Augustus
+		Aulus
+		Caius
+
+	surnames
+		Acilius 
+		Aelius
+		Aemilius
+		Afranius
+
+	women
+		Metella
+		Domitia
+		Gratidia
+		Atia
+
+faction: romans_julii
+
+	characters
+		Amulius
+		Augustus
+		Aulus
+		Caius
+
+	surnames
+		Acilius
+		Aelius
+		Aemilius
+		Afranius
+
+	women
+		Metella
+		Domitia
+		Gratidia
+		Atia
+
+faction: romans_brutii
+
+	characters
+		Amulius
+		Augustus
+		Aulus
+		Caius
+
+	surnames
+		Acilius
+		Aelius
+		Aemilius
+		Afranius
+
+
+	women
+		Metella
+		Domitia
+		Gratidia
+		Atia
+
+faction: romans_scipii
+
+	characters
+		Amulius
+		Augustus
+		Aulus
+		Caius
+
+	surnames
+		Acilius
+		Aelius
+		Aemilius
+		Afranius
+
+	women
+		Metella
+		Domitia
+		Gratidia
+		Atia
+
+;; Gaul (Northern Water Tribe)
+faction: gauls
+
+	characters
+		Arnook
+		Gilak
+		Hahn
+		Hiryu
+		Hotah
+		Kam
+		Sangok
+		Pakku
+		Noa
+		Wei
+
+
+	women
+		Ashuna
+		Hama
+		Kanna
+		Kya
+		Siku
+		Sura
+		Senna
+		Yue
+		Yugoda
+
+
+;; England
+
+faction: britons
+
+	characters
+		Bato
+		Due
+		Gilak
+		Hakoda
+		Hotah
+		Huu
+		Kam
+		Tho
+		Sokka
+		Katara
+		Noa
+		Wei
+		Toph
+		Suki
+		Aang
+
+	surnames
+;;Scotish Tribes
+		the Southern Tribe
+		the Foggy Swamp Tribe
+		the Northern Tribe
+
+	women
+		Ashuna
+		Hama
+		Kanna
+		Kama
+		Kya
+		Katara
+		Siku
+		Sura
+		Senna
+		Yugoda
+
+;; Spain
+faction: spain
+
+	characters
+		Viriathus
+		Ambon
+		Arganthonios
+		Auaros
+
+
+
+	surnames
+;;tribal name
+		the Lusitani
+
+;;place name
+		of Ibaconn
+
+	women
+		Barita
+		Cartimandua
+		Cunoarda
+		Cuniovenda
+
+faction: macedon
+
+	characters
+		Admetos
+		Adymos
+		Agathon
+		Akylos
+
+
+;;ofTownorCity(surnames)
+	surnames
+		of Scodra
+		
+;;of Sicilia
+		of Naulochus
+
+
+	women
+		Harmodias
+		Clymene
+		Menelaia
+		Thessala
+
+faction: egypt
+
+	characters
+		Iroh
+		Ozai
+		Azula
+		Azulon
+		Bujing
+		Chan
+		Chey
+		Chit
+		Dairin
+		Ding
+		Druk
+		Guri
+		Hei
+		Hide
+		Iroh
+		Jeong
+		Kahchi
+		Karu
+		Kei
+		Kunyo
+		Kuzon
+		Lu
+		San
+		Shinu
+		Sho
+		Shoji
+		Shuzumu
+		Shyu
+		Sozin
+		Ukano
+		Zhao
+		Zuko
+		Mongke
+		Ogodei
+		Vachir
+
+
+	surnames
+		Soter
+		Sang
+		Ghao
+		Ran
+		Jeong
+		Lo
+		Ten
+		Min
+		Lee
+		Rha
+
+	women
+		Azula
+		Elua
+		Giya
+		Izumi
+		Rina
+		Kwan
+		Lo
+		Li
+		Ta
+		Ty
+		Ursa
+
+	
+faction: carthage
+
+	characters
+		Arik
+		Baatar
+		Bosco
+		Bumi
+		Chin
+		Chong
+		Chow
+		Fong
+		Fung
+		Ganbat
+		Gansu
+		Ghashiun
+		Gow
+		Gun
+		Guo
+		Haru
+		Hiroshi
+		How
+		Huan
+		Hui
+		Juno
+		Kuei
+		Lee
+		Long
+		Quon
+		Rhee
+		Ryu
+		Sha
+		Sud
+		Teo
+		Tong
+		Toph
+		Tyro
+		Tu
+
+	surnames
+		Beifong
+		Ling
+		Feng
+		Yee
+		Jin
+		Fu
+		Ying
+
+
+	women
+		Jin
+		Joo
+		June
+		Kaya
+		Koko
+		Lian
+		Lily
+		Lokai
+		Lu
+		Macmu
+		Meng
+		Pong
+		Sela
+		Sheng
+		Song
+		Suyin
+		Song
+		Tuyen
+
+faction: germans
+
+	characters
+		Zipoetes
+		Arame
+		Artashes
+		Ara
+
+
+	women
+		Bendis
+		Serapia
+		Dana
+		Afina
+
+
+faction: greek_cities
+
+	characters
+		Acaeus
+		Acamus
+		Acestes
+		Aclepiades
+
+	surnames
+;;of Town/City in Greek areas
+		of Scodra
+;
+;;of Sicily
+		of Sicilia
+;;;of Greek Region
+		of Dardania
+;
+
+	women
+		Harmodias
+		Clymene
+		Menelaia
+		Thessala
+
+faction: seleucid
+
+	characters
+		Abas
+		Abascantus
+		Abderos
+		Aberkios
+
+	surnames
+		Nicator
+		Soter
+		Theos
+		Callinicus
+	women
+		Helena
+		Athena
+		Harmodias
+		Clymene
+		
+
+faction: parthia
+
+	characters
+		Abdieso
+		Achaemenes
+		Arbupales
+		Ardumanish
+;;origin place name
+	surnames
+		of Adianbene
+		of Agbatana
+		of Agra
+		of Mesene
+
+
+	women
+		Ava
+		Daria
+		Esther
+		Jasmine
+
+
+faction: pontus
+
+	characters
+		Akas
+		Ariobarzanes
+		Asander
+		Aspurgus
+
+	surnames
+		of Amasia
+
+
+	women
+		Laodice
+		Pythodoris
+		Antonia
+		Dynamis
+
+	
+faction: armenia
+
+	characters
+		Zipoetes
+		Arame
+		Artashes
+		Ara
+
+
+	surnames
+		of Phasis
+		of Rhizus
+		of Kainepolis
+		of Gorneae
+
+
+	women
+		Erato
+		Karo
+		Pao
+		Arao
+
+
+faction: dacia
+
+	characters
+		Blendidoros
+		Brinkazis
+		Brinkazeis
+		Brinkainos
+
+
+
+	women
+		Karia
+		Bendidora
+		Cerzula
+		Dentysyka
+		
+	
+
+faction: numidia
+
+	characters
+		Arik
+		Baatar
+		Bosco
+		Bumi
+		Chin
+		Chong
+		Chow
+		Fong
+		Fung
+		Ganbat
+		Gansu
+		Ghashiun
+		Gow
+		Gun
+		Guo
+		Haru
+		Hiroshi
+		How
+		Huan
+		Hui
+		Juno
+		Lee
+		Long
+		Quon
+		Rhee
+		Ryu
+		Sha
+		Sud
+		Teo
+		Tong
+		Toph
+		Tyro
+		Tu
+
+	women
+		Jin
+		Joo
+		June
+		Kaya
+		Koko
+		Lian
+		Lily
+		Lokai
+		Lu
+		Macmu
+		Meng
+		Pong
+		Sela
+		Sheng
+		Song
+		Suyin
+		Song
+		Tuyen
+	
+faction: scythia
+
+	characters
+		Zipoetes
+		Arame
+		Artashes
+		Ara
+
+
+	women
+		Bendis
+		Serapia
+		Dana
+		Afina
+	
+faction: thrace
+
+	characters
+		Blendidoros
+		Brinkazis
+		Brinkazeis
+		Brinkainos
+
+
+	women
+		Karia
+		Bendidora
+		Cerzula
+		Dentysyka
+
+
+
+faction: slave
+
+	characters
+		Primus
+		Secundus
+		Sextus
+		Spartacus	
+
+	women
+		Beth
+		Rebecca
+		Bendis
+		Serapia
+	

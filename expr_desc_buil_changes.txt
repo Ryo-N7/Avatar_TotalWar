@@ -1,0 +1,20 @@
+government:
+law_bonus from L2
+
+defenses:
+law_bonus from L2
+
+
+barracks:
+law_bonus
+
+stables:
+law_bonus from L2
+
+
+missiles:
+law_bonus from L2
+
+
+roads:
+trade_bonus 
