@@ -30,8 +30,11 @@ cat(file = r,
 cat(file = r,
     "while I_TurnNumber < 800\n\n")
 
+cat(file = r,
+    "suspend_during_battle on")
+
 ## for loop
-for (i in 1:12) { # 1:nrow(turn_df)
+for (i in 1:nrow(turn_df)) { # 1:nrow(turn_df)
   # print(turn_df[i, 1]) # cons_date
   # print(turn_df[i, 2]) # turn_num
 
