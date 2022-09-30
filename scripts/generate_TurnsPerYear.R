@@ -10,6 +10,7 @@ turn_df <- data.frame(
 # turn_num <- seq(0, 800)
 
 season_change_turn <- seq(2, 800, by = 4)
+winter_turn <- seq(3, 800, by = 4)
 
 
 fileName <- sprintf("4tpy_AV.txt")
@@ -31,7 +32,8 @@ cat(file = r,
     "while I_TurnNumber < 800\n\n")
 
 cat(file = r,
-    "suspend_during_battle on")
+    "
+    suspend_during_battle on\n")
 
 ## for loop
 for (i in 1:nrow(turn_df)) { # 1:nrow(turn_df)
@@ -53,6 +55,16 @@ for (i in 1:nrow(turn_df)) { # 1:nrow(turn_df)
     while I_TurnNumber = %s
     end_while\n\n",
     turn_df[i, 1], turn_df[i, 2], turn_df[i, 2]
+        )
+    )
+  } else if (turn_df[i, 2] %in% winter_turn) {
+    cat(file = r,
+        sprintf("
+    console_command date %s
+    console_command season winter
+    while I_TurnNumber = %s
+    end_while\n\n",
+    turn_df[i, 1], turn_df[i, 2]
         )
     )
   } else {
