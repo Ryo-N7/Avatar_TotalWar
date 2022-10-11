@@ -1,0 +1,11 @@
+
+
+
+
+Top-right panel:
+
+YEAR (1 AD --> 200 AD) will only change after 4 turns
+
+"Turns Left" ALSO only change after 4 turns, so as you progress throughout the year the "354 Turns Left" will appear for 4 turns and THEN change to "353 Turns Left" after the year//4 turns pass.
+
+Tooltip: Same when you hover over the date in the top-right corner, it'll continue to say "Summer, 12th Turn" for 3 turns, THEN "Winter, 12th Turn" and only then will it say "Summer 13th Turn" at the start of a new year.

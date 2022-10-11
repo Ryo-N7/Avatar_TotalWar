@@ -1,0 +1,116 @@
+
+
+- With increase in SWT area settlements, might make sense for Zuko/Iroh to get a few more units in their starting position army?
+
+- Add resources to NEW settlements: DONE
+
+
+- Add default watchtowers for major regions (area around Ba Sing Se, area around FN Capital, etc.)
+- Add 'permanent' forts in strategic places?
+
+- reduce rebel merchant spawn rate
+
+
+
+RESOURCES: DONE
+
+Seashell Cove:
+71 43            pottery
+66 42            pottery
+
+Gourd Town:
+159 19 south tip     furs
+180 47 east mt      glass
+171 39 west mt      pottery
+
+Koalaotter Coast:
+71 19              hides
+
+BUILDING BONUSES: DONE
+
+government:
+law_bonus from L2
+
+defenses:
+law_bonus from L2
+
+barracks:
+law_bonus
+
+stables:
+law_bonus from L2
+
+
+missiles:
+law_bonus from L2
+
+
+roads:
+trade_bonus 
+
+
+==========================================================
+
+NEW REGIONS
+
+
+----------------------------
+Southern Earth Continent
+
+- settlement east of Gaoling// south of Tuzin, take Tuzin's port or remove entirely and have along the southern coast instead
+
+x 153 y 45
+
+Xindu_Valley
+Xindu
+carthage
+Thessalians
+71 158 120
+earth
+5
+5
+
+
+- Add settlement in wooden area south of Ganjin and North of Fong's Base. Make either rebel or EK start. Take Ganjin's port and create new one further north for Ganjin
+
+x 103 y 72
+
+Jiangdu_Port
+Jiangdu
+carthage
+Thessalians
+0 158 84
+earth
+2
+5
+
+
+- Add rebel settlement at foot of mountains in sliver of land north of Gaipan where the Senlin region has space >> add mines!
+
+
+
+- Add settlement between Tokjin and Senlin coast settlement along the narrow strait, closer to northern edge. Port along middle of coastline.
+
+
+
+
+- Add settlment on south side of serpent's pass, west of Full Moon's Haven, as either Rebel or EK start.
+
+
+
+---------------------------------- 
+Northeren Earth Continent
+
+- Add settlement in forested area North West of Makapu and Pohuai, set as EK start. Move Makapu port south coast. Create new port near river opening.
+
+- Add settlement in forested area south of Yu Dao, FN
+
+- Add settlement in mountain valley South West of Northern Air Temple. Carve out as large mountain base of bandits. >> add mines!
+
+- Add settlement east of NAT, North of Ba Yo. Take Ba Yo's port. Landlock Ba Yo to nerf EK a bit?
+
+- Add settlement between Serpent's Pass and QuWei. Serve as southern gateway to EK alongside Serpent's Pass.
+
+- Add settlement north of Hiapo, east of Quwei on narrow strip between. Control 'Silk' resource and protect with large rebel garrison. 
+
+- Add settlement north of Zin Ba. Take Zin Ba port. New Zin Ba port in narrow river strait.

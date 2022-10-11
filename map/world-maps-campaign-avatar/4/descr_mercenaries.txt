@@ -1,0 +1,31 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Mercenary pools, by KurdishNomad
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+pool Mercs
+	regions Omashu_Province Zhang_Province Senlin_Province Makapu_Province Zinba_Province Chin_Province Tuzin_Province Fullmoon_Province Basingse_Region Sopung_Province Sarisu_Province Dikoni_Province Sarinan_Province GourdIsle_Province SeashellCove_Province The_Triplets Koalaotter_Coast
+	unit sellsword,		exp 0 cost 395 replenish 0.16 - 0.25 max 1 initial 1	restrict carthage, gauls, britons, numidia
+	unit merc cav,			exp 0 cost 385 replenish 0.10 - 0.20 max 1 initial 1	restrict carthage, gauls, britons, numidia
+	unit merc archer,		exp 0 cost 440 replenish 0.11 - 0.21 max 1 initial 0	restrict carthage, gauls, britons, numidia
+	unit merc spear,		exp 0 cost 325 replenish 0.11 - 0.21 max 2 initial 1	restrict carthage, gauls, britons, numidia
+	
+pool Mercs_northpole
+	regions Northpole_Central Northpole_East Northpole_West
+	unit water scout merc,		exp 0 cost 400 replenish 0.16 - 0.25 max 2 initial 1	restrict gauls, britons
+
+pool Mercs_swamp
+	regions Foggy_Swamp
+	unit water bender2,		exp 0 cost 500 replenish 0.16 - 0.25 max 2 initial 1	restrict gauls, britons
+
+pool Mercs_sand
+	regions Siwong_South Siwong_North Mesa_Province
+	unit sand bender,		exp 0 cost 400 replenish 0.16 - 0.25 max 2 initial 1	restrict carthage, numidia
+
+pool Mercs_beifong
+	regions Gaoling_Province
+	unit beifong retainer merc,		exp 0 cost 660 replenish 0.16 - 0.25 max 1 initial 1	restrict britons, numidia
+	unit sellsword,		exp 0 cost 395 replenish 0.16 - 0.25 max 1 initial 1	restrict carthage, gauls, britons, numidia
+	unit merc cav,			exp 0 cost 385 replenish 0.10 - 0.20 max 1 initial 1	restrict carthage, gauls, britons, numidia
+	unit merc archer,		exp 0 cost 440 replenish 0.11 - 0.21 max 1 initial 0	restrict carthage, gauls, britons, numidia
+	unit merc spear,		exp 0 cost 325 replenish 0.11 - 0.21 max 2 initial 1	restrict carthage, gauls, britons, numidia
