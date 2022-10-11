@@ -671,6 +671,42 @@ settlement
 	}
 }
 
+;Jiangdu               ;;; NEW: RN7 ;;;
+;x 103, y 72
+settlement
+{
+	level large_town
+	region Jiangdu_Port
+
+	year_founded 0
+	population 1500
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+	building
+	{
+		type port_buildings port
+	}
+}
 
 ;ba sing se
 character	Kuei, named character, leader, age 65, , x 161, y 116, portrait kuei
@@ -2176,44 +2212,6 @@ settlement
 }
 
 
-;Jiangdu               ;;; NEW: RN7 ;;;
-;x 103, y 72
-settlement
-{
-	level large_town
-	region Jiangdu_Port
-
-	year_founded 0
-	population 1500
-	plan_set TLA_set
-	faction_creator slave
-	building
-	{
-		type core_building governors_villa
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
-	building
-	{
-		type market market
-	}
-	building
-	{
-		type barracks militia_barracks
-	}
-	building
-	{
-		type port_buildings port
-	}
-}
-
-
 ;Gourd Town
 character	sub_faction carthage, Teo, general, age 30, , x 176, y 48
 army
@@ -2254,13 +2252,6 @@ unit		earth sword				exp 0 armour 0 weapon_lvl 0
 unit		earth sword				exp 0 armour 0 weapon_lvl 0
 unit		earth spear				exp 0 armour 0 weapon_lvl 0
 
-; Jiangdu Port
-character	sub_faction carthage, Teo, general, age 30, , x 103, y 72
-army
-unit		sellsword				exp 0 armour 0 weapon_lvl 0
-unit		earth sword				exp 0 armour 0 weapon_lvl 0
-unit		earth sword				exp 0 armour 0 weapon_lvl 0
-unit		earth spear				exp 0 armour 0 weapon_lvl 0
 
 ;foggy swamp town
 character	sub_faction britons, Tho, general, age 20, , x 116, y 55
