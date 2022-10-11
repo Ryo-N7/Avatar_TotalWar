@@ -1,6 +1,0 @@
-; Xindu
-character	sub_faction britons, Junyi, general, age 26, , x 153, y 45
-army
-unit		sellsword				exp 0 armour 0 weapon_lvl 0
-unit		earth spear				exp 0 armour 0 weapon_lvl 0
-unit		earth spear				exp 0 armour 0 weapon_lvl 0

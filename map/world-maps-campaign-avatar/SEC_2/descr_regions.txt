@@ -1,0 +1,581 @@
+;;;;;;;;Made by KurdishNomad;;;;;;;;;;;;;;;;;;;;;;;;
+
+; ######################## Northern & Southern Water Tribe
+
+Northpole_Central	;north pole capital
+	Agna_Qela
+	gauls
+	Brigantes
+	51 51 153
+	water
+	5
+	3
+
+Southpole	;South Pole Capital
+	Southpole_Capital
+	britons
+	Brigantes
+	41 61 168
+	south
+	5
+	3
+
+Southpole_East	;village
+	Southpole_Village
+	britons
+	Brigantes
+	30 190 190
+	south
+	5
+	3
+
+Northpole_East	;north pole village
+	Aput
+	gauls
+	Brigantes
+	40 40 140
+	water
+	5
+	3
+
+Northpole_West	;north pole town
+	Sedna
+	gauls
+	Brigantes
+	30 30 130
+	water
+	5
+	3
+
+
+
+; ######################## Earth Kingdom
+
+Basingse_Region	;Ba Sing Se
+	Basingse
+	carthage
+	Thessalians
+	30 130 50
+	earth, basingse
+	5
+	8
+
+Siwong_South	;Misty Palm Oasis
+	Mistypalm
+	carthage
+	Thessalians
+	90 100 30
+	earth, sand
+	5
+	4
+
+Foggy_Swamp	;Foggy Swamp Town
+	Foggy_Town
+	gauls
+	Suebi
+	100 80 10
+	swamp
+	5
+	5
+
+Kyoshi_Island	;Kyoshi
+	Kyoshi_Village
+	egypt
+	Amazons
+	150 150 30
+	kyoshi
+	5
+	3
+
+Plains	;Plain Village
+	Plain_Village
+	carthage
+	Thessalians
+	50 30 20
+	earth
+	5
+	3
+
+Chin_Province	;Chin
+	Chin
+	carthage
+	Thessalians
+	100 70 10
+	earth
+	5
+	5
+
+Gaoling_Province	;Gaoling
+	Gaoling
+	carthage
+	Thessalians
+	70 80 10
+	earth, beifong
+	5
+	7
+
+Tuzin_Province	;Tu Zin
+	Tuzin
+	carthage
+	Thessalians
+	70 70 10
+	earth
+	5
+	5
+
+Cameleon_Bay	;Cameleon Bay
+	Cameleon_Village
+	carthage
+	Thessalians
+	75 75 10
+	earth
+	5
+	4
+
+Hiapo_Province	;Hiapo
+	Hiapo
+	carthage
+	Thessalians
+	80 90 30
+	earth
+	5
+	4
+
+Jaminobe_Province	;Jaminobe
+	Jaminobe
+	carthage
+	Thessalians
+	90 80 30
+	earth
+	5
+	3
+
+Siwong_North	;Jibade
+	Jibade
+	carthage
+	Thessalians
+	100 90 30
+	earth, sand
+	5
+	2
+
+Northernair_Province	;Northern Air Temple
+	Northernair
+	carthage
+	Thessalians
+	230 230 30
+	air
+	5
+	3
+
+Southernair_Province	;Southern Air Temple
+	Southernair
+	carthage
+	Thessalians
+	220 230 30
+	air
+	5
+	3
+
+Westernair_Province	;Western Air Temple
+	Westernair
+	carthage
+	Thessalians
+	230 220 30
+	air
+	5
+	3
+
+Easternair_Province	;Eastern Air Temple
+	Easternair
+	carthage
+	Thessalians
+	220 220 30
+	air
+	5
+	4
+
+Sarisu_Province	;Sarisu
+	Sarisu
+	carthage
+	Thessalians
+	220 210 30
+	earth
+	5
+	3
+
+Sopung_Province	;Sopung
+	Sopung
+	carthage
+	Thessalians
+	200 200 30
+	earth
+	5
+	3
+
+Jesu_Province	;Jesu
+	Jesu
+	carthage
+	Thessalians
+	190 190 30
+	earth
+	5
+	3
+
+Sarinan_Province	;Sarinan
+	Sarinan
+	carthage
+	Thessalians
+	70 70 30
+	earth
+	5
+	3
+
+Dikoni_Province	;Dikoni
+	Dikoni
+	carthage
+	Thessalians
+	60 70 30
+	earth
+	5
+	2
+
+Durodi_Province	;Durodi
+	Durodi
+	carthage
+	Thessalians
+	70 60 10
+	earth
+	5
+	4
+
+Tansan_Province	;Tansan
+	Tansan
+	carthage
+	Thessalians
+	0 110 30
+	earth
+	5
+	4
+
+Tokjin_Province	;Tokjin
+	Tokjin
+	carthage
+	Thessalians
+	0 60 50
+	earth
+	5
+	4
+
+Omashu_Province	;Omashu
+	Omashu
+	numidia
+	Thessalians
+	120 80 10
+	earth, omashu
+	5
+	4
+
+Quwei_Province	;Quwei
+	Quwei
+	carthage
+	Thessalians
+	10 110 50
+	earth
+	5
+	5
+
+Serpent_Province	;Serpent's hold
+	Serpent_Hold
+	carthage
+	Thessalians
+	20 120 50
+	earth
+	5
+	2
+
+Bayo_Province	;Ba Yo
+	Bayo
+	carthage
+	Thessalians
+	0 70 50
+	earth
+	5
+	3
+
+Dotuka_Province	;Dotuka
+	Dotuka
+	carthage
+	Thessalians
+	0 90 50
+	earth
+	5
+	3
+
+Lipai_Province	;Lipai
+	Lipai
+	carthage
+	Thessalians
+	0 80 50
+	earth
+	5
+	3
+
+Fullmoon_Province	;Full Moon Bay
+	Fullmoon
+	carthage
+	Thessalians
+	100 100 30
+	earth
+	5
+	4
+
+Makapu_Province	;Makapu
+	Makapu
+	carthage
+	Thessalians
+	0 50 30
+	earth, fire
+	5
+	5
+
+Fong_Province	;Fong Base
+	Fong_Base
+	carthage
+	Thessalians
+	110 80 10
+	earth
+	5
+	4
+	
+
+; ######################## Fire Nation
+
+Firecapital_Region	;Fire Nation Capital
+	Firecapital
+	egypt
+	Trinovantes
+	250 30 30
+	fire
+	5
+	7
+
+Ember_Province	;Ember Town
+	Ember_Town
+	egypt
+	Trinovantes
+	240 30 30
+	fire
+	5
+	5
+
+Yaron_Province	;Yaron
+	Yaron
+	egypt
+	Trinovantes
+	220 30 30
+	fire
+	5
+	5
+
+Fountain_Island	;Fire Fountain City
+	Fountain_City
+	egypt
+	Trinovantes
+	210 30 30
+	fire
+	5
+	5
+
+Shujing_Island	;Shu Jing
+	Shujing
+	egypt
+	Trinovantes
+	200 30 30
+	fire
+	5
+	5
+
+Janghui_Island	;Jang Hui
+	Janghui
+	egypt
+	Trinovantes
+	190 30 30
+	fire
+	5
+	4
+
+Firecolony_Province	;Fire Nation Colony
+	Firecolony
+	egypt
+	Trinovantes
+	180 30 30
+	fire
+	5
+	3
+
+Whaletail_Island	;Whale Tail Outpost
+	Whaletail_Colony
+	egypt
+	Trinovantes
+	120 120 30
+	fire, searaven
+	5
+	3
+
+Yudao_Province	;Yu Dao
+	Yudao
+	egypt
+	Trinovantes
+	230 30 30
+	earth, fire
+	5
+	5
+
+Fireresort_Province	;Fire Resort
+	Fireresort
+	carthage
+	Thessalians
+	70 80 30
+	earth
+	5
+	3
+
+Pohuai_Province	;Pohuai
+	Pohuai
+	carthage
+	Thessalians
+	0 60 30
+	fire
+	5
+	5
+
+Pirate_Province	;Pirate Town
+	Pirate_Town
+	carthage
+	Thessalians
+	0 80 30
+	earth
+	5
+	5
+
+Zinba_Province	;Zin Ba
+	Zinba
+	carthage
+	Thessalians
+	0 100 30
+	lead, slaves, grain, timber, earth
+	5
+	4
+
+Gaipan_Province	;Gaipan
+	Gaipan
+	carthage
+	Thessalians
+	80 80 10
+	earth
+	5
+	4
+
+Senlin_Province	;Senlin
+	Senlin
+	carthage
+	Thessalians
+	0 120 30
+	earth
+	5
+	3
+
+Mining_Province	;Mining Village
+	Mining_Town
+	carthage
+	Thessalians
+	90 80 10
+	earth
+	5
+	4
+
+Ganjin_Province	;Gan Jin
+	Ganjin
+	carthage
+	Thessalians
+	0 90 30
+	earth
+	5
+	5
+
+Zhang_Province	;Zhang
+	Zhang
+	carthage
+	Thessalians
+	80 70 10
+	earth
+	5
+	4
+
+Mesa_Province	;Mesa
+	Mesa
+	carthage
+	Thessalians
+	80 70 30
+	sand, earth
+	5
+	3
+
+Colony_Province	;Colony
+	Colony
+	egypt
+	Thessalians
+	0 240 50
+	fire
+	5
+	5
+
+
+
+; ###### Test new settlements
+
+GourdIsle_Province	;Gourd Island    ;;; NEW: RN7 ;;;
+	Gourd_Town
+	carthage
+	Thessalians
+	122 115 223
+	air
+	3
+	3
+
+SeashellCove_Province	;Seashell Cove    ;;; NEW: RN7 ;;;
+	Seashell_Cove
+	carthage
+	Thessalians
+	215 245 155
+	south
+	3
+	3
+
+Koalaotter_Coast	; Koalaotter Coast    ;;; NEW: RN7 ;;;
+	Koalaotter_Coast
+	carthage
+	Thessalians
+	145 192 84
+	south
+	2
+	2
+	
+Xindu_Valley    ; Xindu Valley   ;;; NEW: RN7 ;;;
+	Xindu
+	carthage
+	Thessalians
+	71 158 120
+	earth
+	3
+	2
+	
+Jiangdu_Port    ; Jiangdu     ;;; NEW: RN7 ;;;
+	Jiangdu
+	carthage
+	Thessalians
+	0 158 84
+	earth
+	2
+	5
