@@ -2147,7 +2147,7 @@ settlement
 
 
 ;Xindu 
-;x 153, y 45
+;x 152, y 43
 settlement
 {
 	level town
@@ -2240,6 +2240,22 @@ unit		earth spear				exp 0 armour 0 weapon_lvl 0
 
 ; Koalaotter Coast
 character	sub_faction britons, Tho, general, age 30, , x 59, y 20
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+; Xindu Valley
+character	sub_faction carthage, Teo, general, age 30, , x 152, y 43
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+; Jiangdu Port
+character	sub_faction carthage, Teo, general, age 30, , x 103, y 72
 army
 unit		sellsword				exp 0 armour 0 weapon_lvl 0
 unit		earth sword				exp 0 armour 0 weapon_lvl 0

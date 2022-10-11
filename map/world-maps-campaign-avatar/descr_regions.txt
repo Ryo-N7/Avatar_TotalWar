@@ -535,7 +535,7 @@ Colony_Province	;Colony
 
 ; ###### Test new settlements
 
-GourdIsle_Province	;Gourd Island
+GourdIsle_Province	;Gourd Island    ;;; NEW: RN7 ;;;
 	Gourd_Town
 	carthage
 	Thessalians
@@ -544,7 +544,7 @@ GourdIsle_Province	;Gourd Island
 	3
 	3
 
-SeashellCove_Province	;Seashell Cove
+SeashellCove_Province	;Seashell Cove    ;;; NEW: RN7 ;;;
 	Seashell_Cove
 	carthage
 	Thessalians
@@ -553,7 +553,7 @@ SeashellCove_Province	;Seashell Cove
 	3
 	3
 
-Koalaotter_Coast	; Koalaotter Coast
+Koalaotter_Coast	; Koalaotter Coast    ;;; NEW: RN7 ;;;
 	Koalaotter_Coast
 	carthage
 	Thessalians
@@ -562,7 +562,7 @@ Koalaotter_Coast	; Koalaotter Coast
 	2
 	2
 	
-Xindu_Valley    ; Xindu Valley
+Xindu_Valley    ; Xindu Valley   ;;; NEW: RN7 ;;;
 	Xindu
 	carthage
 	Thessalians
