@@ -348,15 +348,6 @@ Fong_Province	;Fong Base
 	5
 	4
 	
-Jiangdu_Port    ; Jiangdu     ;;; NEW: RN7 ;;;
-	Jiangdu
-	carthage
-	Thessalians
-	0 158 84
-	earth
-	2
-	5
-
 
 ; ######################## Fire Nation
 
@@ -580,3 +571,11 @@ Xindu_Valley    ; Xindu Valley
 	3
 	2
 	
+Jiangdu_Port    ; Jiangdu     ;;; NEW: RN7 ;;;
+	Jiangdu
+	carthage
+	Thessalians
+	0 158 84
+	earth
+	2
+	5
