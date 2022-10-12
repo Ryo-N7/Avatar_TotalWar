@@ -579,3 +579,12 @@ Jiangdu_Port    ; Jiangdu     ;;; NEW: RN7 ;;;
 	earth
 	2
 	5
+
+East_Mines    ; East Mines     ;;; NEW: RN7 ;;;
+	East_Mines
+	carthage
+	Thessalians
+	212 220 16
+	earth, fire
+	1
+	5

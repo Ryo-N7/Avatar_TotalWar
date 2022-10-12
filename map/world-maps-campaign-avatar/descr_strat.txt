@@ -2218,6 +2218,31 @@ settlement
 	}
 }
 
+;East_mines 
+;x --, y --
+settlement
+{
+	level town
+	region East_Mines
+
+	year_founded 0
+	population 700
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type market market
+	}
+}
+
 
 ;Gourd Town
 character	sub_faction carthage, Teo, general, age 30, , x 176, y 48

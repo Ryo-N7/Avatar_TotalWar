@@ -46,7 +46,7 @@ law_bonus from L2
 
 
 roads:
-trade_bonus 
+trade_bonus
 
 
 ==========================================================
@@ -70,6 +70,8 @@ earth
 5
 5
 
+resources
+
 
 - Add settlement in wooden area south of Ganjin and North of Fong's Base. Make either rebel or EK start. Take Ganjin's port and create new one further north for Ganjin
 
@@ -85,8 +87,18 @@ earth
 5
 
 
+resources
+
+
 - Add rebel settlement at foot of mountains in sliver of land north of Gaipan where the Senlin region has space >> add mines!
 
+x 96 y 87
+212 220 16
+
+resources
+94 88
+99 92
+92 87
 
 
 - Add settlement between Tokjin and Senlin coast settlement along the narrow strait, closer to northern edge. Port along middle of coastline.
@@ -98,7 +110,7 @@ earth
 
 
 
----------------------------------- 
+----------------------------------
 Northeren Earth Continent
 
 - Add settlement in forested area North West of Makapu and Pohuai, set as EK start. Move Makapu port south coast. Create new port near river opening.
@@ -111,6 +123,6 @@ Northeren Earth Continent
 
 - Add settlement between Serpent's Pass and QuWei. Serve as southern gateway to EK alongside Serpent's Pass.
 
-- Add settlement north of Hiapo, east of Quwei on narrow strip between. Control 'Silk' resource and protect with large rebel garrison. 
+- Add settlement north of Hiapo, east of Quwei on narrow strip between. Control 'Silk' resource and protect with large rebel garrison.
 
 - Add settlement north of Zin Ba. Take Zin Ba port. New Zin Ba port in narrow river strait.
