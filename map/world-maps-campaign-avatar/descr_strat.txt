@@ -172,6 +172,15 @@ resource	glass	1, 		180,47
 resource	pottery		1, 		171,39
 ; Koalaotter Coast
 resource 	hides	1, 		71,19
+; Xindu Valley
+resource	timber,         1,	147,42
+resource	hides,         1,	159,46
+; Jiangdu Port
+resource	timber,         1,	103,74
+; East Mines
+resource	iron,         1,	94,88
+resource	silver,         1,	99,92
+resource	gold,         1,	92,87
 
 
 ;; JNF 2021-06-01 - move the resource quantity redirect to be inline with the normal strat file
@@ -1272,7 +1281,30 @@ settlement
 	}
 }
 
+;East_mines                  ;;; NEW: RN7 ;;;
+;x 96, y 87
+settlement
+{
+	level town
+	region East_Mines
 
+	year_founded 0
+	population 700
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type market market
+	}
+}
 
 
 character	Ozai, named character, leader, age 35, , x 3, y 75, portrait ozai
@@ -1450,11 +1482,11 @@ army
 unit		naval PH					exp 0 armour 0 weapon_lvl 0
 unit		naval PH					exp 0 armour 0 weapon_lvl 0
 
-
-
-
-
-
+; East Mines
+character	Dairin, general, age 28, , x 96, y 87
+army
+unit		fire spear				exp 0 armour 0 weapon_lvl 0
+unit		fire spear				exp 0 armour 0 weapon_lvl 0
 
 
 character_record		Elua, 	female, command 0, influence 0, management 0, subterfuge 0, age 2, alive, never_a_leader
@@ -2211,31 +2243,6 @@ settlement
 	building
 	{
 		type hinterland_farms farms
-	}
-	building
-	{
-		type market market
-	}
-}
-
-;East_mines 
-;x --, y --
-settlement
-{
-	level town
-	region East_Mines
-
-	year_founded 0
-	population 700
-	plan_set TLA_set
-	faction_creator slave
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
 	}
 	building
 	{

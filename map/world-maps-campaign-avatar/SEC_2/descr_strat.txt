@@ -172,6 +172,11 @@ resource	glass	1, 		180,47
 resource	pottery		1, 		171,39
 ; Koalaotter Coast
 resource 	hides	1, 		71,19
+; Xindu Valley
+resource	timber,         1,	147,42
+resource	hides,         1,	159,46
+; Jiangdu Port
+resource	timber,         1,	103,74
 
 
 ;; JNF 2021-06-01 - move the resource quantity redirect to be inline with the normal strat file
