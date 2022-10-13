@@ -2250,6 +2250,35 @@ settlement
 	}
 }
 
+;Serpent Strait             ;;; NEW: RN7 ;;;
+;x --, y --
+settlement
+{
+	level large_town
+	region Serpent_Strait
+
+	year_founded 0
+	population 1500
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type port_buildings port
+	}
+}
+
 
 ;Gourd Town
 character	sub_faction carthage, Teo, general, age 30, , x 176, y 48

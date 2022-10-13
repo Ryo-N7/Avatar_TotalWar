@@ -109,7 +109,11 @@ resources
 - Add settlement between Tokjin and Senlin coast settlement along the narrow strait, closer to northern edge. Port along middle of coastline.
 
 
+x 105 y 98
+99 208 102
 
+
+resources
 
 - Add settlment on south side of serpent's pass, west of Full Moon's Haven, as either Rebel or EK start.
 

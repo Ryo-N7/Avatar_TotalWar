@@ -588,3 +588,13 @@ East_Mines    ; East Mines     ;;; NEW: RN7 ;;;
 	earth, fire
 	1
 	5
+	
+Serpent_Strait    ; Serpent Strait     ;;; NEW: RN7 ;;;
+	Serpent_Strait
+	carthage
+	Thessalians
+	99 208 102
+	earth
+	1
+	5
+	
