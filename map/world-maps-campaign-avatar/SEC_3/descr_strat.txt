@@ -1,0 +1,2568 @@
+;Avatar map by KurdishNomad
+;	gauls ~ Northern Water
+;	carthage ~ Earth Kingdom
+;	numidia ~ Kingdom of Omashu
+;	britons ~ Southern Water
+;	egypt ~ Fire Nation
+
+campaign		avatar
+playable
+	gauls
+	carthage
+	numidia
+	britons
+	egypt
+end
+unlockable
+end
+nonplayable
+	slave
+end
+
+
+start_date	1 summer
+end_date	200 summer
+
+show_date_as_turns_remaining
+
+brigand_spawn_value 10
+pirate_spawn_value 999
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of landmarks section <<<<
+
+;landmark	pyramids_and_sphinx	181,	12
+;landmark	pharos	178,	21
+;landmark	colossus	160,	44
+;landmark	temple	157,	53
+;landmark	statue	134,	49
+;landmark	gardens	237,	46
+
+;library
+landmark	mausoleum	144,	70
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of resources section <<<<
+
+;        Resource Type   Quantity      X     Y
+;wild_animals NWC
+resource	wild_animals,         1,	68,147	
+;wild_animals South pole capital
+resource	wild_animals,         1,	66,1
+;silver Aput
+resource	silver,         1,	86,151
+;wild_animals Sedna
+resource	wild_animals,         1,	42,151
+;grain Ba Sing Se
+resource	grain,         1,	165,112
+;silk Ba Sing Se
+resource	silk,         1,	164,120
+;copper Ba Sing Se
+resource	copper,         1,	165,108
+;silk Chameleon Bay
+resource	silk,         1,	180,100
+;timber Dotuka
+
+;grain Lipai
+resource	grain,         1,	162,120
+;iron Ba Yo
+resource	iron,         1,	137,135
+;timber Seplin
+resource	timber,         1,	97,89
+;grain Liapo
+resource	grain,         1,	109,111
+;timber Gaipan
+resource	timber,         1,	99,102
+;timber Pohuai
+resource	timber,         1,	91,102
+;pottery Pohuai
+resource	pottery,         1,	91,97
+;timber Makupu
+resource	timber,         1,	79,118
+;marble Makupu
+resource	marble,         1,	89,127
+;timber Taku
+resource	timber,         1,	87,120
+;iron Taku
+resource	iron,         1,	85,129
+;pottery Omashu
+resource	pottery,         1,	108,67
+;iron Omashu
+resource	iron,         1,	117,68
+;iron Fong Base
+resource	iron,         1,	113,76
+;wild_animals Foggy Swamp Town
+resource	wild_animals,         1,	113,56
+;olive_oil Chin
+resource	olive_oil,         1,	105,47
+;iron Mining village
+resource	iron,         1,	90,76
+;silver Mining village
+resource	silver,         1,	93,76
+;gold Mining village
+resource	gold,         1,	93,82
+;grain Gan Jin
+
+;pottery Zhang
+resource	pottery,         1,	121,86
+;purple_dye Gaoling
+resource	purple_dye,         1,	135,38
+;grain Gaoling
+resource	grain,         1,	140,47
+;grain Qinhar
+resource	grain,         1,	161,58
+;timber Sarinan
+resource	timber,         1,	143,92
+;silk Misty Palm Oasis
+resource	silk,         1,	130,61
+;silk Jibade
+resource	silk,         1,	147,81
+;silk Jaminobe
+resource	silk,         1,	188,86
+;hides Qidao
+resource	hides,         1,	190,107
+;hides Wao
+resource	hides,         1,	157,26
+;hides Dikoni
+resource	hides,         1,	127,15
+;wild_animals Northern Air Temple
+resource	wild_animals,         1,	115,137
+;marble Ancient Ruined City
+resource	marble,         1,	10,105
+;hides Sarisu
+resource	hides,         1,	33,14
+;wild_animals Sopung
+resource	wild_animals,         1,	82,39
+;wild_animals Jesu
+resource	wild_animals,         1,	35,121
+;wild_animals South Pole Village
+resource	wild_animals,         1,	89,11
+;hides South Pole Village
+resource	hides,         1,	99,3
+;iron FNC
+;resource	iron,         1,	182
+;silk FNC
+resource	silk,         1,	8,69
+;silver FNC
+resource	silver,         1,	5,85
+;grain Tunoyo
+resource	grain,         1,	12,84
+;grain Yu Dao
+resource	grain,         1,	42,100
+;wild_animals Yu Dao
+resource	wild_animals,         1,	55,104
+;textiles Narahoro
+resource	textiles,         1,	32,64
+;textiles Fire Fountain City
+resource	textiles,         1,	45,70
+;grain Ember Town
+resource	grain,         1,	64,87
+;wild_animals Fire Nation Colony
+resource	wild_animals,         1,	44,122
+;gold Whale Tail Outpost
+resource	gold,         1,	88,49
+
+; NEW
+; Seashell Cove pottery
+resource	pottery		1, 		71,43
+resource	pottery		1, 		66,42
+; Gourd Town
+resource	furs	1, 		159,19
+resource	glass	1, 		180,47
+resource	pottery		1, 		171,39
+; Koalaotter Coast
+resource 	hides	1, 		71,19
+; Xindu Valley
+resource	timber,         1,	147,42
+resource	hides,         1,	159,46
+; Jiangdu Port
+resource	timber,         1,	103,74
+; East Mines
+resource	iron,         1,	94,88
+resource	silver,         1,	99,92
+resource	gold,         1,	92,87
+
+
+;; JNF 2021-06-01 - move the resource quantity redirect to be inline with the normal strat file
+
+;;can still define like normal at the top, I've just grouped them both to make sure I didn't miss anything
+;;resource	iron,           1,         83,   128
+;	resource	slaves,         67,   152
+;	resource	slaves,         62,   2
+;	resource	slaves,         159,   115
+;	resource	slaves,         3,   78
+;	resource	slaves,         132,   59
+
+;;note: order is important, must be enabled _then_ disabled
+
+;; JNF 2021-06-01 - resources with resource quantity enabled
+resource_quantity_enabled
+;	resource	slaves,         1,         67,   152
+;	resource	slaves,         1,         62,   2
+;	resource	slaves,         1,         159,   115
+;	resource	slaves,         1,         3,   78
+;	resource	slaves,         1,         132,   59
+;	resource	slaves,         1,         60,   117
+end
+
+;; JNF 2021-06-01 - resources with resource quantity disabled
+;resource_quantity_disabled
+;	resource	iron,           1,         83,   128
+;	resource	wine,           1,         53,   63
+;end
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of sound emitters section <<<<
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of events section <<<<
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of factions section <<<<
+;;;;;;;;Northern Water Tribe;;;;;;;;;
+
+faction	gauls, religious_smith
+ai_do_not_attack_faction britons, carthage, numidia
+denari	8000
+
+;North Pole Capital
+;x 66, y 152
+settlement
+{
+	level city
+	region Northpole_Central
+
+	year_founded 0
+	population 7000
+	plan_set NWC_set
+	faction_creator gauls
+	building
+	{
+		type core_building governors_palace
+	}
+	building
+	{
+		type defenses stone_wall
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type smith smiths_workshop
+	}
+	building
+	{
+		type hinterland_roads roads
+	}
+	building
+	{
+		type port_buildings port
+	}
+	building
+	{
+		type spiritoasis spiritoasis_spiritoasis
+	}
+}
+
+;north pole village
+;x 95, y 154
+settlement
+{
+	level village
+	region Northpole_East
+
+	year_founded 0
+	population 500
+	plan_set Polar_set
+	faction_creator gauls
+}
+
+settlement
+{
+	level town
+	region Northpole_West
+
+	year_founded 0
+	population 900
+	plan_set Polar_set
+	faction_creator gauls
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+
+character	Arnook, named character, leader, age 40, , x 66, y 152, portrait arnook
+traits Generous 1 , GoodTaxman 2 , Just 2 , KindRuler 1 , Northern 1 , Immortal 1 
+army
+unit		water bender3 bg					exp 0 armour 0 weapon_lvl 0
+unit		water bender					exp 0 armour 0 weapon_lvl 0
+unit		water bender					exp 0 armour 0 weapon_lvl 0
+unit		water spear2					exp 0 armour 0 weapon_lvl 0
+unit		water spear					exp 0 armour 0 weapon_lvl 0
+
+character	Hahn, named character, heir, age 18, , x 48, y 147
+traits GloriousFool 2 , Ignorance 1 , Immortal 1 
+army
+unit		water bender3 bg				exp 0 armour 0 weapon_lvl 0
+unit		water spear					exp 0 armour 0 weapon_lvl 0
+
+character	Pakku, named character, age 45, , x 95, y 154, portrait pakku, strat_model pakku, battle_model pakku
+traits GoodAttacker 3 , GoodAttacker 2 ,  HarshJustice 1 ,  Intelligent 1 , Northern 1 , Waterbender 1 , Whitelotus 1 , Bender 2 , Immortal 1 
+army
+unit		water bender3 bg				exp 0 armour 0 weapon_lvl 0
+unit		water spear				exp 0 armour 0 weapon_lvl 0
+
+
+character_record		Kam, 	male, command 0, influence 0, management 0, subterfuge 0, age 10, alive, never_a_leader
+character_record		Hotah, 	male, command 0, influence 0, management 0, subterfuge 0, age 8, alive, never_a_leader
+character_record		Yue, 	female, command 0, influence 0, management 0, subterfuge 0, age 2, alive, never_a_leader
+
+character_record		Yugoda, 	female, command 0, influence 0, management 0, subterfuge 0, age 38, alive, never_a_leader
+
+relative 	Arnook, 	Yugoda,		Hahn,		Kam,		Hotah,		Yue,	end
+
+
+;;;;;;;;Southern Water Tribe;;;;;;;;
+
+faction	britons, trader_henry
+ai_do_not_attack_faction gauls, carthage, numidia
+denari	8000
+
+;south pole capital
+;x 61, y 2
+settlement
+{
+	level large_town
+	region Southpole
+
+	year_founded 0
+	population 2800
+	plan_set Polar_set
+	faction_creator gauls
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+	building
+	{
+		type port_buildings port
+	}
+}
+
+;south pole village
+;x 94, y 6
+settlement
+{
+	level village
+	region Southpole_East
+
+	year_founded 0
+	population 590
+	plan_set Polar_set
+	faction_creator britons
+}
+
+character	Hakoda, named character, leader, age 40, , x 94, y 6, portrait hakoda
+traits NaturalMilitarySkill 3 , Loyal 1 , GoodAttacker 1 , StrategicSkill 1 , Southern 1 , Immortal 1 
+army
+unit		water warrior3				exp 0 armour 0 weapon_lvl 0
+unit		water warrior				exp 0 armour 0 weapon_lvl 0
+unit		water spear				exp 0 armour 0 weapon_lvl 0
+
+character	Sokka, named character, heir, age 20, , x 61, y 2, portrait sokka, strat_model sokka, battle_model sokka
+traits GoodEngineer 2 , ArchitectSkill 1 , GoodTrader 1 , Sailor 1 , Pragmatic 1 , TacticalSkill 2 , Southern 1 , Ideaguy 1 , Sokka 1, Immortal 1 
+ancillaries boomerang
+army
+unit		sokka c				exp 0 armour 0 weapon_lvl 0
+unit		water spear				exp 0 armour 0 weapon_lvl 0
+
+character	Aang, named character, age 16, , x 59, y 5, portrait aang, strat_model aang, battle_model aang
+traits Just 2 , KindRuler 1 , Lastairbender 1 , Generous 2 , LenientJustice 2 , Avatar 1 , Twinkletoes 1 , Immortal 1
+ancillaries staff, appa
+army
+unit		aang c				exp 0 armour 0 weapon_lvl 0
+
+character	Katara, named character, age 16, , x 60, y 5, portrait katara, strat_model katara, battle_model katara
+traits GoodDefender 1 , InspiringSpeaker 2 , Loyal 3 , Upright 2 , Waterbender 1 , Southern 1 , Immortal 1 , Katara 1
+ancillaries necklace
+army
+unit		katara c				exp 0 armour 0 weapon_lvl 0
+
+;toph
+character	Toph, named character, age 16, , x 133, y 42, portrait toph, strat_model toph, battle_model toph , 
+traits GoodDefender 2 , Gambling 2 , Brave 1 , Stoic 2 , Earthbender 1 , Beifong 1 , Immortal 1 , Toph 1
+ancillaries belt
+army
+unit		toph c				exp 0 armour 0 weapon_lvl 0
+
+;suki
+character	Suki, named character, age 16, , x 132, y 42, portrait suki, strat_model suki, battle_model suki , 
+traits GoodDefender 2 , TacticalSkill 2 , Brave 2 , Loyal 3 , Immortal 1 , Suki 1
+ancillaries fans
+army
+unit		suki c				exp 0 armour 0 weapon_lvl 0
+unit		kyoshi				exp 0 armour 0 weapon_lvl 0
+
+character	Gilak, admiral, age 30, , x 61, y 8
+army
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+
+character	Bato, admiral, age 30, , x 100, y 9
+army
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+
+
+character_record		Siku, 	female, command 0, influence 0, management 0, subterfuge 0, age 2, alive, never_a_leader
+
+character_record		Kya, 	female, command 0, influence 0, management 0, subterfuge 0, age 38, alive, never_a_leader
+
+relative 	Hakoda, 	Kya,		Sokka,		Siku,	end
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;Earth Kingdom;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+faction	carthage, balanced_smith
+ai_do_not_attack_faction gauls, numidia, britons
+denari	15000
+
+;ba sing se
+;x 161, y 116
+settlement
+{
+	level huge_city
+	region Basingse_Region
+
+	year_founded 0
+	population 18000
+	plan_set Basingse_set
+	faction_creator carthage
+	building
+	{
+		type core_building imperial_palace
+	}
+	building
+	{
+		type defenses large_stone_wall
+	}
+	building
+	{
+		type hinterland_roads paved_roads
+	}
+	building
+	{
+		type hinterland_farms farms+2
+	}
+	building
+	{
+		type health sewers
+	}
+	building
+	{
+		type equestrian stables
+	}
+	building
+	{
+		type barracks city_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+	building
+	{
+		type smith smiths_workshop
+	}
+}
+
+;Quwei
+;x 161, y 97
+settlement
+{
+	level town
+	region Quwei_Province
+
+	year_founded 0
+	population 1000
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+;	building
+;	{
+;		type hinterland_farms farms
+;	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;serpents hold
+;x 136, y 111
+settlement
+{
+	level village
+	region Serpent_Province
+
+	year_founded 0
+	population 400
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;Ba Yo
+;x 140, y 130
+settlement
+{
+	level town
+	region Bayo_Province
+
+	year_founded 0
+	population 900
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;Dotuka
+;x 178, y 114
+settlement
+{
+	level village
+	region Dotuka_Province
+
+	year_founded 0
+	population 500
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;Lipai
+;x 165, y 133
+settlement
+{
+	level village
+	region Lipai_Province
+
+	year_founded 0
+	population 550
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;Full Moon Bay
+;x 139, y 95
+settlement
+{
+	level village
+	region Fullmoon_Province
+
+	year_founded 0
+	population 590
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;Makapu
+;x 79, y 109
+settlement
+{
+	level large_town
+	region Makapu_Province
+
+	year_founded 0
+	population 1320
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+}
+
+;Fong base
+;x 109, y 80
+settlement
+{
+	level large_town
+	region Fong_Province
+
+	year_founded 0
+	population 1800
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+}
+
+;Jiangdu               ;;; NEW: RN7 ;;;
+;x 103, y 72
+settlement
+{
+	level large_town
+	region Jiangdu_Port
+
+	year_founded 0
+	population 1500
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+	building
+	{
+		type port_buildings port
+	}
+}
+
+;ba sing se
+character	Kuei, named character, leader, age 65, , x 161, y 116, portrait kuei
+traits Ignorance 3 , BadCommander 1 , Just 1 , Loyal 1 , Kuei 1 , Immortal 1
+ancillaries longfeng
+army
+unit		earth bender3 bg					exp 0 armour 0 weapon_lvl 0
+unit		earth bender3					exp 0 armour 0 weapon_lvl 0
+unit		earth spear3					exp 0 armour 0 weapon_lvl 0
+unit		earth lancer3					exp 0 armour 0 weapon_lvl 0
+unit		daili					exp 0 armour 0 weapon_lvl 0
+
+character	Bosco, named character, heir, age 45, x 161, y 117
+traits GoodCommander 2 , GoodDefender 2 , Earthbender 1 , Immortal 1 
+army
+unit		earth bender3 bg					exp 0 armour 0 weapon_lvl 0
+unit		earth bender3					exp 0 armour 0 weapon_lvl 0
+unit		earth spear3					exp 0 armour 0 weapon_lvl 0
+unit		earth lancer3					exp 0 armour 0 weapon_lvl 0
+
+;quwei
+character	Huan, general, age 30, , x 161, y 98
+army
+unit		earth bender					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+;serpent hold
+character	Baatar, general, age 30, , x 136, y 111
+army
+unit		earth bender					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+;ba yo
+character	Arik, general, age 30, , x 140, y 130
+army
+unit		earth bender					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+;dotuka
+character	Sha, general, age 30, , x 178, y 114
+army
+unit		earth bender2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear2					exp 0 armour 0 weapon_lvl 0
+
+;lipai
+character	Chow, general, age 30, , x 165, y 133
+army
+unit		earth bender2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear2					exp 0 armour 0 weapon_lvl 0
+
+;full moon bay
+character	Sha, general, age 30, , x 139, y 95
+army
+unit		earth sword					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+;makapu
+character	Chong, general, age 30, , x 79, y 109
+army
+unit		earth bender2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth sword					exp 0 armour 0 weapon_lvl 0
+
+;fong base
+character	Chong, general, age 30, , x 107, y 63
+army
+unit		earth bender2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth sword					exp 0 armour 0 weapon_lvl 0
+
+; Jiangdu Port
+character	Teo, general, age 30, , x 103, y 72
+army
+unit		earth bender2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+character_record		How, 	male, command 0, influence 0, management 0, subterfuge 0, age 10, alive, never_a_leader
+character_record		Hui, 	male, command 0, influence 0, management 0, subterfuge 0, age 8, alive, never_a_leader
+character_record		Lian, 	female, command 0, influence 0, management 0, subterfuge 0, age 2, alive, never_a_leader
+
+character_record		Song, 	female, command 0, influence 0, management 0, subterfuge 0, age 38, alive, never_a_leader
+
+relative 	Kuei, 	Song,		Bosco,		How,		Hui,		Lian,	end
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;Fire Nation;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+faction	egypt, religious_caesar
+denari	14000
+
+;fire nation capital
+;x 3, y 75
+settlement
+{
+	level large_city
+	region Firecapital_Region
+
+	year_founded 0
+	population 3500
+	plan_set FNC_set
+	faction_creator egypt
+	building
+	{
+		type core_building proconsuls_palace
+	}
+	building
+	{
+		type defenses stone_wall
+	}
+	building
+	{
+		type hinterland_roads paved_roads
+	}
+	building
+	{
+		type hinterland_farms farms+2
+	}
+	building
+	{
+		type health sewers
+	}
+	building
+	{
+		type equestrian stables
+	}
+	building
+	{
+		type barracks city_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+	building
+	{
+		type smith smiths_workshop
+	}
+	building
+	{
+		type port_buildings shipwright
+	}
+}
+
+;ember town
+;x 66, y 87
+settlement
+{
+	level town
+	region Ember_Province
+
+	year_founded 0
+	population 1050
+	plan_set TLA_set
+	faction_creator egypt
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+	building
+	{
+		type market market
+	}
+}
+
+;Yaron
+;x 23, y 60
+settlement
+{
+	level town
+	region Yaron_Province
+
+	year_founded 0
+	population 1000
+	plan_set TLA_set
+	faction_creator egypt
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+	building
+	{
+		type port_buildings port
+	}
+	building
+	{
+		type market market
+	}
+}
+
+;fire fountain city
+;x 48, y 76
+settlement
+{
+	level city
+	region Fountain_Island
+
+	year_founded -200
+	population 3800
+	plan_set TLA_set
+	faction_creator egypt
+	building
+	{
+		type core_building governors_palace
+	}
+	building
+	{
+		type defenses stone_wall
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type smith smiths_workshop
+	}
+	building
+	{
+		type health sewers
+	}
+	building
+	{
+		type hinterland_roads paved_roads
+	}
+	building
+	{
+		type equestrian stables
+	}
+	building
+	{
+		type barracks city_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+	building
+	{
+		type port_buildings port
+	}
+}
+
+;shu jing
+;x 66, y 87
+settlement
+{
+	level town
+	region Shujing_Island
+
+	year_founded 0
+	population 1050
+	plan_set TLA_set
+	faction_creator egypt
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+	building
+	{
+		type market market
+	}
+}
+
+;jang hui
+;x 69, y 94
+settlement
+{
+	level village
+	region Janghui_Island
+
+	year_founded 0
+	population 530
+	plan_set TLA_set
+	faction_creator egypt
+}
+
+;fire nation colony
+;x 60, y 133
+settlement
+{
+	level village
+	region Firecolony_Province
+	year_founded 0
+	population 500
+	plan_set TLA_set
+	faction_creator egypt
+}
+
+;fire resort
+;x 69, y 132
+settlement
+{
+	level town
+	region Fireresort_Province
+
+	year_founded 0
+	population 920
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;yu dao
+;x 55, y 116
+settlement
+{
+	level large_town
+	region Yudao_Province
+
+	year_founded 0
+	population 1200
+	plan_set TLA_set
+	faction_creator egypt
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+}
+
+;Whale Tail Colony
+;x 91, y 45
+settlement
+{
+	level town
+	region Whaletail_Island
+
+	year_founded 0
+	population 790
+	plan_set TLA_set
+	faction_creator egypt
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;pohuai
+;x 89, y 117
+settlement
+{
+	level large_town
+	region Pohuai_Province
+
+	year_founded 0
+	population 1700
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+}
+
+;pirate pier
+;x 93, y 107
+settlement
+{
+	level town
+	region Pirate_Province
+
+	year_founded 0
+	population 980
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+;zin ba
+;x 103, y 104
+settlement
+{
+	level village
+	region Zinba_Province
+
+	year_founded 0
+	population 700
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;gaipan
+;x 103, y 104
+settlement
+{
+	level village
+	region Gaipan_Province
+
+	year_founded 0
+	population 490
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;mining village
+;x 93, y 72
+settlement
+{
+	level village
+	region Mining_Province
+
+	year_founded 0
+	population 490
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;gan jin
+;x 109, y 80
+settlement
+{
+	level town
+	region Ganjin_Province
+
+	year_founded 0
+	population 1100
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+	building
+	{
+		type market market
+	}
+}
+
+;zhang
+;x 118, y 87
+settlement
+{
+	level village
+	region Zhang_Province
+
+	year_founded 0
+	population 490
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;fire colony
+;x 102, y 51
+settlement
+{
+	level town
+	region Colony_Province
+
+	year_founded 0
+	population 1000
+	plan_set TLA_set
+	faction_creator egypt
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type market market
+	}
+}
+
+;East_mines                  ;;; NEW: RN7 ;;;
+;x 96, y 87
+settlement
+{
+	level town
+	region East_Mines
+
+	year_founded 0
+	population 700
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type market market
+	}
+}
+
+
+character	Ozai, named character, leader, age 35, , x 3, y 75, portrait ozai
+traits Genocide 2 , Bloodthirsty 1 , HarshJustice 2 , HarshRuler 2 , Authoritarian 2 , Firebender 1 , Bender 1 , Lightningbending 1 , Immortal 1 , Ozai 1
+ancillaries master_of_archers
+army
+unit		fire bender3 bg					exp 0 armour 0 weapon_lvl 0
+unit		fire bender					exp 0 armour 0 weapon_lvl 0
+unit		fire spear2					exp 0 armour 0 weapon_lvl 0
+unit		fire sword					exp 0 armour 0 weapon_lvl 0
+
+character	Zuko, named character, heir, age 18, , x 37, y 13, portrait zuko, strat_model zuko, battle_model zuko
+traits GoodRiskyAttacker 2 , IndecisiveAttacker 1 ,  Upright 1 , Anger 1 , Firebender 1 , Losthonor 1 , Trueheir 1 , Immortal 1
+ancillaries twinswords
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+
+character	Iroh, named character, age 50, , x 38, y 13, portrait iroh, strat_model iroh, battle_model iroh
+traits GoodSiegeAttacker 2 , Upright 3 , TacticalSkill 2 , PoliticsSkill 2 , KindRuler 2 , InspiringSpeaker 2 , Firebender 1 , Dragon 1 , Whitelotus 1 , Bender 1 , Lightningbending 1 , Immortal 1 , Iroh 1
+;ancillaries mathematician
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+
+character	Azula, named character, age 18, , x 3, y 77, portrait azula, strat_model azula, battle_model azula
+traits Spymaster 2 , SmoothTalker 2 ,  StrategicSkill 2 , Unjust 1 , Authoritarian 1 , DeceiverVirtue 3 , Firebender 1 , Trueprodigy 1 , Bender 1 , Lightningbending 1 , Immortal 1
+ancillaries cherrypitremover
+army
+unit		fire bender3 bg					exp 0 armour 0 weapon_lvl 0
+
+character	Chan, general, age 30, , x 23, y 82
+army
+unit		fire bender					exp 0 armour 0 weapon_lvl 0
+unit		fire sword					exp 0 armour 0 weapon_lvl 0
+
+character	Kahchi, general, age 30, , x 23, y 60
+army
+unit		fire bender					exp 0 armour 0 weapon_lvl 0
+unit		fire sword					exp 0 armour 0 weapon_lvl 0
+
+character	Shyu, general, age 30, , x 48, y 76
+army
+unit		fire bender					exp 0 armour 0 weapon_lvl 0
+unit		fire bender					exp 0 armour 0 weapon_lvl 0
+unit		fire sword					exp 0 armour 0 weapon_lvl 0
+
+character	Chan, general, age 30, , x 66, y 87
+army
+unit		fire bender					exp 0 armour 0 weapon_lvl 0
+unit		fire sword					exp 0 armour 0 weapon_lvl 0
+
+character	Guri, general, age 30, , x 69, y 94
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+
+;colonies
+
+;whale tail island
+character	Chit, general, age 25, , x 91, y 50
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+
+;yu dao
+character	Shinu, general, age 30, , x 55, y 116
+army
+unit		fire bender					exp 0 armour 0 weapon_lvl 0
+unit		fire sword					exp 0 armour 0 weapon_lvl 0
+unit		fire sword					exp 0 armour 0 weapon_lvl 0
+unit		rhino						exp 0 armour 0 weapon_lvl 0
+
+;fire resort
+character	Guri, general, age 30, , x 81, y 137
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+
+;fire colony
+character	Kei, general, age 30, , x 60, y 133
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+
+;pohuai
+character	Zhao, named character, age 35, , x 89, y 117, portrait zhao, strat_model zhao, battle_model zhao,
+traits Corrupt 1 , Anger 2 , Despoiler 1 , Austere 1 , Firebender 1 , Immortal 1 , Zhao 1 
+ancillaries lostscrolls
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire javelin					exp 0 armour 0 weapon_lvl 0
+unit		fire warden					exp 0 armour 0 weapon_lvl 0
+
+;pirate pier
+character	Chey, general, age 30, , x 93, y 100
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+
+;zin ba
+character	Karu, general, age 30, , x 103, y 116
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire sword2					exp 0 armour 0 weapon_lvl 0
+
+;Gaipan
+character	Bujing, named character, age 50, , x 105, y 84, 
+traits GoodAttacker 2 ,Austere 1 , Firebender 1 , Immortal 1 
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire tank					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire sword2					exp 0 armour 0 weapon_lvl 0
+unit		fire javelin					exp 0 armour 0 weapon_lvl 0
+
+;mining village
+character	Dairin, general, age 28, , x 93, y 72
+army
+unit		fire bender2				exp 0 armour 0 weapon_lvl 0
+unit		fire spear				exp 0 armour 0 weapon_lvl 0
+unit		fire spear				exp 0 armour 0 weapon_lvl 0
+
+;zhang
+character	Hei, general, age 35, , x 118, y 87
+army
+unit		fire bender2				exp 0 armour 0 weapon_lvl 0
+unit		fire spear				exp 0 armour 0 weapon_lvl 0
+unit		fire javelin				exp 0 armour 0 weapon_lvl 0
+
+;ganjin
+character	Mongke, general, age 32, , x 109, y 80
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+
+;fire nation colony
+character	Hide, general, age 30, , x 102, y 51
+army
+unit		fire bender2					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+unit		fire spear					exp 0 armour 0 weapon_lvl 0
+
+;naval
+character	Kunyo, admiral, age 30, , x 29, y 11
+army
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+
+character	San, admiral, age 30, , x 42, y 82
+army
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+
+character	Shyu, admiral, age 30, , x 98, y 120
+army
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+unit		naval PH					exp 0 armour 0 weapon_lvl 0
+
+; East Mines
+character	Dairin, general, age 28, , x 96, y 87
+army
+unit		fire spear				exp 0 armour 0 weapon_lvl 0
+unit		fire spear				exp 0 armour 0 weapon_lvl 0
+
+
+character_record		Elua, 	female, command 0, influence 0, management 0, subterfuge 0, age 2, alive, never_a_leader
+
+character_record		Ursa, 	female, command 0, influence 0, management 0, subterfuge 0, age 38, alive, never_a_leader
+
+relative 	Ozai, 	Ursa,		Zuko,		Elua,	end
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;Kingdom of Omashu;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+faction	numidia, balanced_smith
+ai_do_not_attack_faction britons, carthage
+denari	5000
+
+;omashu
+;x 118, y 64
+settlement
+{
+	level city
+	region Omashu_Province
+
+	year_founded -200
+	population 7000
+	plan_set Omashu_set
+	faction_creator numidia
+	building
+	{
+		type core_building governors_palace
+	}
+	building
+	{
+		type defenses stone_wall
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type smith smiths_workshop
+	}
+	building
+	{
+		type hinterland_roads paved_roads
+	}
+	building
+	{
+		type barracks city_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+}
+
+character	Bumi, named character, leader, age 40, , x 118, y 64, portrait bumi, strat_model bumi, battle_model bumi, 
+traits GoodDefender 3 , GoodCommander 2 , Insane 1 , Intelligent 1 , TacticalSkill 2 , Earthbender 1 , Whitelotus 1 , Neutraljing 1 , Bender 1 , Immortal 1 
+ancillaries flopsie
+army
+unit		omashu bg					exp 0 armour 0 weapon_lvl 0
+unit		earth bender2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear2					exp 0 armour 0 weapon_lvl 0
+unit		earth javelin					exp 0 armour 0 weapon_lvl 0
+unit		earth lancer					exp 0 armour 0 weapon_lvl 0
+
+
+
+;character	Fong, named character, , heir, age 18, , x 122, y 70, 
+character	Fong, named character, age 18, , x 122, y 70, 
+traits GoodAttacker 2 , Superstitious 1 , Loyal 2 , GoodCommander 2 , Earthbender 1 
+army
+unit		earth bender2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear2					exp 0 armour 0 weapon_lvl 0
+unit		earth lancer2					exp 0 armour 0 weapon_lvl 0
+
+
+;;.........<< numidia , faction Omashu Family Tree >>..............................................................................
+
+;character_record		Arik, 	male, command 0, influence 0, management 0, subterfuge 0, age 10, alive, never_a_leader
+;character_record		Sud, 	male, command 0, influence 0, management 0, subterfuge 0, age 8, alive, never_a_leader
+;character_record		Tuyen, 	female, command 0, influence 0, management 0, subterfuge 0, age 2, alive, never_a_leader
+
+;character_record		Meng, 	female, command 0, influence 0, management 0, subterfuge 0, age 38, alive, never_a_leader
+
+;relative 	Bumi, 	Meng,		Fong,		Arik,		Sud,		Tuyen,	end
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;Slave;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+faction	slave, balanced_smith
+denari	10000
+
+;foggy swamp town
+;x 116, y 55
+settlement
+{
+	level town
+	region Foggy_Swamp
+
+	year_founded 0
+	population 900
+	plan_set TLA_set
+	faction_creator gauls
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;misty palm oasis
+;x 132, y 60
+settlement
+{
+	level town
+	region Siwong_South
+
+	year_founded 0
+	population 1152
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;chin
+;x 107, y 44
+settlement
+{
+	level large_town
+	region Chin_Province
+
+	year_founded 0
+	population 1200
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type barracks militia_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+}
+
+;Plain Village
+;x 128, y 54
+settlement
+{
+	level town
+	region Plains
+
+	year_founded -100
+	population 920
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;kyoshi
+;x 108, y 34
+settlement
+{
+	level town
+	region Kyoshi_Island
+
+	year_founded 0
+	population 980
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;gaoling
+;x 130, y 55
+settlement
+{
+	level city
+	region Gaoling_Province
+
+	year_founded 0
+	population 2430
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_palace
+	}
+	building
+	{
+		type defenses stone_wall
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type smith smiths_workshop
+	}
+	building
+	{
+		type health sewers
+	}
+	building
+	{
+		type hinterland_roads paved_roads
+	}
+	building
+	{
+		type equestrian stables
+	}
+	building
+	{
+		type barracks city_barracks
+	}
+	building
+	{
+		type missiles practice_field
+	}
+}
+
+;Tu Zin
+;x 163, y 63
+settlement
+{
+	level town
+	region Tuzin_Province
+
+	year_founded 0
+	population 800
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;chameleon bay
+;x 173, y 76
+settlement
+{
+	level town
+	region Cameleon_Bay
+
+	year_founded 0
+	population 900
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+;Hiapo
+;x 192, y 89
+settlement
+{
+	level village
+	region Hiapo_Province
+
+	year_founded 0
+	population 590
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;Jaminobe
+;x 193, y 111
+settlement
+{
+	level village
+	region Jaminobe_Province
+
+	year_founded 0
+	population 590
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;jibade
+;x 149, y 78
+settlement
+{
+	level town
+	region Siwong_North
+
+	year_founded 0
+	population 970
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+;occupied air temples
+;north air
+;x 118, y 146
+settlement
+{
+	level town
+	region Northernair_Province
+
+	year_founded -200
+	population 400
+	plan_set NAT_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+;south air
+;x 51, y 34
+settlement
+{
+	level town
+	region Southernair_Province
+
+	year_founded -200
+	population 400
+	plan_set NAT_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type leemurhouse leemurhouse_leemurhouse
+	}
+}
+
+;west air
+;x 18, y 123
+settlement
+{
+	level town
+	region Westernair_Province
+
+	year_founded -200
+	population 400
+	plan_set NAT_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+;east air
+;x 192, y 60
+settlement
+{
+	level town
+	region Easternair_Province
+
+	year_founded -200
+	population 400
+	plan_set NAT_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+;Jesu
+;x 9, y 109
+settlement
+{
+	level village
+	region Jesu_Province
+
+	year_founded 0
+	population 700
+	plan_set TLA_set
+	faction_creator slave
+}
+
+;Sopung
+;x 27, y 17
+settlement
+{
+	level town
+	region Sopung_Province
+
+	year_founded 0
+	population 1000
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+;Sarisu
+;x 93, y 34
+settlement
+{
+	level town
+	region Sarisu_Province
+
+	year_founded 0
+	population 980
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;Sarinan
+;x 148, y 26
+settlement
+{
+	level village
+	region Sarinan_Province
+
+	year_founded 0
+	population 590
+	plan_set TLA_set
+	faction_creator slave
+}
+
+;Dikoni
+;x 77, y 36
+settlement
+{
+	level town
+	region Dikoni_Province
+
+	year_founded 0
+	population 980
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type barracks muster_field
+	}
+}
+
+;Durodi
+;x 159, y 86
+settlement
+{
+	level village
+	region Durodi_Province
+
+	year_founded 0
+	population 500
+	plan_set TLA_set
+	faction_creator slave
+}
+
+;Tansan
+;x 123, y 119
+settlement
+{
+	level village
+	region Tansan_Province
+
+	year_founded 0
+	population 500
+	plan_set TLA_set
+	faction_creator carthage
+}
+
+;Tokjin
+;x 121, y 99
+settlement
+{
+	level town
+	region Tokjin_Province
+
+	year_founded 0
+	population 820
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+}
+
+;senlin
+;x 84, y 90
+settlement
+{
+	level town
+	region Senlin_Province
+
+	year_founded 0
+	population 580
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+;mesa
+;x 84, y 90
+settlement
+{
+	level town
+	region Mesa_Province
+
+	year_founded 0
+	population 580
+	plan_set TLA_set
+	faction_creator carthage
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+
+;;;;;;;;;;;;;;;; NEW settlements: RN7 ;;;;;;;;;;;;;
+
+;Gourd Town
+;x 176, y 48
+settlement
+{
+	level large_town
+	region GourdIsle_Province
+
+	year_founded -200
+	population 1100
+	plan_set NAT_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_villa
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+	building
+	{
+		type port_buildings port
+	}
+}
+
+
+;Seashell Cove
+;x 66, y 44
+settlement
+{
+	level town
+	region SeashellCove_Province
+
+	year_founded 0
+	population 500
+	plan_set Polar_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
+
+;Koalaotter Coast
+;x 59, y 20
+settlement
+{
+	level village
+	region Koalaotter_Coast
+
+	year_founded 0
+	population 500
+	plan_set Polar_set
+	faction_creator slave
+}
+
+
+;Xindu 
+;x 152, y 43
+settlement
+{
+	level town
+	region Xindu_Valley
+
+	year_founded 0
+	population 700
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+	building
+	{
+		type market market
+	}
+}
+
+
+;Gourd Town
+character	sub_faction carthage, Teo, general, age 30, , x 176, y 48
+army
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+
+; Seashell Cove
+character	sub_faction carthage, Teo, general, age 30, , x 66, y 44
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+; Koalaotter Coast
+character	sub_faction britons, Tho, general, age 30, , x 59, y 20
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+; Xindu Valley
+character	sub_faction carthage, Teo, general, age 30, , x 152, y 43
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+
+;foggy swamp town
+character	sub_faction britons, Tho, general, age 20, , x 116, y 55
+
+army
+unit		water bender2				exp 0 armour 0 weapon_lvl 0
+unit		water bender2				exp 0 armour 0 weapon_lvl 0
+unit		water bender2				exp 0 armour 0 weapon_lvl 0
+unit		water bender2				exp 0 armour 0 weapon_lvl 0
+unit		water bender2				exp 0 armour 0 weapon_lvl 0
+unit		water bender2				exp 0 armour 0 weapon_lvl 0
+unit		water bender2				exp 0 armour 0 weapon_lvl 0
+
+;misty palm oasis
+character	sub_faction carthage, Ghashiun, general, age 30, , x 132, y 60
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sand bender				exp 0 armour 0 weapon_lvl 0
+unit		sand bender				exp 0 armour 0 weapon_lvl 0
+
+;chin
+character	sub_faction carthage, Chow, general, age 30, , x 107, y 43
+army
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+;Plain Village
+character	sub_faction carthage, Teo, general, age 30, , x 128, y 54
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+
+;kyoshi
+character	sub_faction carthage, Sha, general, age 30, , x 108, y 34
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+; Gaoling
+character	sub_faction carthage, Tyro, general, age 30, , x 130, y 45
+army
+unit		earth bender2				exp 0 armour 0 weapon_lvl 0
+unit		earth bender2				exp 0 armour 0 weapon_lvl 0
+unit		earth spear2				exp 0 armour 0 weapon_lvl 0
+unit		earth spear2				exp 0 armour 0 weapon_lvl 0
+
+;Tu Zin
+character	sub_faction carthage, Sha, general, age 30, , x 163, y 63
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+;Chameleon Bay
+character	sub_faction carthage, Chong, general, age 30, , x 173, y 76
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+;Hiapo
+character	sub_faction carthage, Chin, general, age 30, , x 192, y 89
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		earth spear2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+;Jaminobe
+character	sub_faction carthage, Chin, general, age 30, , x 193, y 111
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		earth spear2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+;Jibade
+character	sub_faction carthage, Sud, general, age 30, , x 149, y 78
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sand bender				exp 0 armour 0 weapon_lvl 0
+unit		sand bender				exp 0 armour 0 weapon_lvl 0
+
+;occupied air temples
+character	sub_faction carthage, Teo, general, age 40, , x 118, y 146
+army
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+
+
+character	sub_faction carthage, Arik, general, age 18, , x 51, y 34
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+
+character	sub_faction carthage, Gow, general, age 30, , x 16, y 127
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+character	sub_faction carthage, Sha, general, age 30, , x 192, y 60
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth javelin				exp 0 armour 0 weapon_lvl 0
+unit		earth spear2				exp 0 armour 0 weapon_lvl 0
+
+;jesu
+character	sub_faction carthage, Guo, general, age 30, , x 9, y 109
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+;sopung
+character	sub_faction carthage, Sud, general, age 30, , x 27, y 17
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+;sarisu
+character	sub_faction carthage, How, general, age 30, , x 93, y 34
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+;sarinan
+character	sub_faction carthage, Fung, general, age 30, , x 148, y 26
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+;dikoni
+;character	sub_faction carthage, How, general, age 30, , x 77, y 36
+;army
+;unit		sellsword					exp 0 armour 0 weapon_lvl 0
+;unit		sellsword					exp 0 armour 0 weapon_lvl 0
+;unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+;dikoni
+;correct
+character	sub_faction carthage, How, general, age 30, , x 116, y 16
+army
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+;durodi
+character	sub_faction carthage, Hiroshi, general, age 30, , x 159, y 86
+army
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+
+;tansan
+character	sub_faction carthage, Rhee, general, age 30, , x 123, y 119
+army
+unit		earth bender					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth javelin				exp 0 armour 0 weapon_lvl 0
+
+;tokjin
+character	sub_faction carthage, Quon, general, age 30, , x 121, y 99
+army
+unit		earth bender					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+;senlin
+character	sub_faction carthage, How, general, age 30, , x 84, y 90
+army
+unit		earth bender				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+;mesa
+character	sub_faction carthage, How, general, age 30, , x 128, y 79
+army
+unit		sand bender				exp 0 armour 0 weapon_lvl 0
+unit		sand bender				exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+unit		sellsword					exp 0 armour 0 weapon_lvl 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of diplomacy section <<<<
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of diplomacy section <<<<
+;DS_ALLIED			= 0
+;DS_SUSPICIOUS		= 100
+;DS_NEUTRAL			= 200
+;DS_HOSTILE			= 400
+;DS_AT_WAR			= 600
+
+core_attitudes	carthage,		0		numidia
+core_attitudes	carthage,		600		egypt
+core_attitudes	carthage,		200		gauls, britons
+core_attitudes	egypt,		600		slave, gauls, britons, carthage, numidia
+core_attitudes	numidia,		600		slave, egypt
+core_attitudes	numidia,		0		carthage
+core_attitudes	numidia,		90		britons, gauls
+core_attitudes	gauls,		600		slave
+core_attitudes	gauls,		90		britons, numidia, carthage
+core_attitudes	britons,		90		gauls, carthage, numidia
+core_attitudes	britons,		600		slave, egypt
+core_attitudes	slave,		600		gauls, britons, egypt, numidia, carthage
+
+faction_relationships	carthage,			600		slave, egypt
+faction_relationships	carthage,			200		gauls, britons
+faction_relationships	carthage,			0		numidia
+faction_relationships	numidia,			600		slave, egypt
+faction_relationships	numidia,			100		gauls, britons
+faction_relationships	numidia,			0		carthage
+faction_relationships	egypt,			600		slave, gauls, britons, carthage, numidia
+faction_relationships	gauls,			600		slave, egypt
+faction_relationships	gauls,			200		carthage, numidia
+faction_relationships	gauls,			0		britons
+faction_relationships	britons,			600		slave, egypt
+faction_relationships	britons,			200		carthage
+faction_relationships	britons,			100		numidia
+faction_relationships	britons,			100		gauls
+faction_relationships	slave,			600		gauls, britons, egypt, carthage, numidia
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; >>>> start of regions section <<<<
+
+script
+4tpy_AV.txt
