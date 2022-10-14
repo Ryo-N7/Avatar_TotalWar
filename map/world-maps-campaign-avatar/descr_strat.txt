@@ -597,19 +597,6 @@ settlement
 	faction_creator carthage
 }
 
-;Full Moon Bay
-;x 139, y 95
-settlement
-{
-	level village
-	region Fullmoon_Province
-
-	year_founded 0
-	population 590
-	plan_set TLA_set
-	faction_creator carthage
-}
-
 ;Makapu
 ;x 79, y 109
 settlement
@@ -717,6 +704,31 @@ settlement
 	}
 }
 
+;Lingxi
+;x 129, y 95
+settlement
+{
+	level town
+	region Lingxi_Province
+
+	year_founded 0
+	population 900
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
 ;ba sing se
 character	Kuei, named character, leader, age 65, , x 161, y 116, portrait kuei
 traits Ignorance 3 , BadCommander 1 , Just 1 , Loyal 1 , Kuei 1 , Immortal 1
@@ -768,13 +780,6 @@ unit		earth bender2					exp 0 armour 0 weapon_lvl 0
 unit		earth spear2					exp 0 armour 0 weapon_lvl 0
 unit		earth spear2					exp 0 armour 0 weapon_lvl 0
 
-;full moon bay
-character	Sha, general, age 30, , x 139, y 95
-army
-unit		earth sword					exp 0 armour 0 weapon_lvl 0
-unit		earth spear					exp 0 armour 0 weapon_lvl 0
-unit		earth spear					exp 0 armour 0 weapon_lvl 0
-
 ;makapu
 character	Chong, general, age 30, , x 79, y 109
 army
@@ -793,6 +798,12 @@ unit		earth sword					exp 0 armour 0 weapon_lvl 0
 character	Teo, general, age 30, , x 103, y 72
 army
 unit		earth bender2					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+unit		earth spear					exp 0 armour 0 weapon_lvl 0
+
+; Lingxi
+character	Teo, general, age 30, , x 129, y 95
+army
 unit		earth spear					exp 0 armour 0 weapon_lvl 0
 unit		earth spear					exp 0 armour 0 weapon_lvl 0
 
@@ -2279,31 +2290,18 @@ settlement
 	}
 }
 
-;Lingxi
-;x 129, y 96
+;Full Moon Bay
+;x 139, y 95
 settlement
 {
-	level town
-	region Lingxi_Province
+	level village
+	region Fullmoon_Province
 
 	year_founded 0
-	population 900
+	population 590
 	plan_set TLA_set
-	faction_creator slave
-	building
-	{
-		type core_building governors_house
-	}
-	building
-	{
-		type defenses wooden_pallisade
-	}
-	building
-	{
-		type hinterland_farms farms
-	}
+	faction_creator carthage
 }
-
 
 ;Gourd Town
 character	sub_faction carthage, Teo, general, age 30, , x 176, y 48
@@ -2345,6 +2343,13 @@ unit		earth sword				exp 0 armour 0 weapon_lvl 0
 unit		earth sword				exp 0 armour 0 weapon_lvl 0
 unit		earth spear				exp 0 armour 0 weapon_lvl 0
 
+; Full Moon Bay
+character	sub_faction carthage, Teo, general, age 30, , x 139, y 95
+army
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
 
 ;foggy swamp town
 character	sub_faction britons, Tho, general, age 20, , x 116, y 55
@@ -2618,5 +2623,3 @@ faction_relationships	slave,			600		gauls, britons, egypt, carthage, numidia
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; >>>> start of regions section <<<<
 
-script
-4tpy_AV.txt
