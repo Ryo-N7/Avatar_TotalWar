@@ -2262,7 +2262,7 @@ settlement
 }
 
 ;Serpent Strait             ;;; NEW: RN7 ;;;
-;x --, y --
+;x 105, y 98
 settlement
 {
 	level large_town
@@ -2342,6 +2342,21 @@ unit		sellsword				exp 0 armour 0 weapon_lvl 0
 unit		earth sword				exp 0 armour 0 weapon_lvl 0
 unit		earth sword				exp 0 armour 0 weapon_lvl 0
 unit		earth spear				exp 0 armour 0 weapon_lvl 0
+
+;Serpent Strait
+character	sub_faction carthage, Teo, general, age 30, , x 105, y 98
+army
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth spear				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		earth sword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
+unit		sellsword				exp 0 armour 0 weapon_lvl 0
 
 ; Full Moon Bay
 character	sub_faction carthage, Teo, general, age 30, , x 139, y 95
