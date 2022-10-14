@@ -597,4 +597,12 @@ Serpent_Strait    ; Serpent Strait     ;;; NEW: RN7 ;;;
 	earth
 	1
 	5
-	
+
+Lingxi_Province    ; Lingxi     ;;; NEW: RN7 ;;;
+	Lingxi
+	carthage
+	Thessalians
+	80 93 177
+	earth
+	1
+	5

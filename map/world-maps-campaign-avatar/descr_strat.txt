@@ -2279,6 +2279,31 @@ settlement
 	}
 }
 
+;Lingxi
+;x 129, y 96
+settlement
+{
+	level town
+	region Lingxi_Province
+
+	year_founded 0
+	population 900
+	plan_set TLA_set
+	faction_creator slave
+	building
+	{
+		type core_building governors_house
+	}
+	building
+	{
+		type defenses wooden_pallisade
+	}
+	building
+	{
+		type hinterland_farms farms
+	}
+}
+
 
 ;Gourd Town
 character	sub_faction carthage, Teo, general, age 30, , x 176, y 48

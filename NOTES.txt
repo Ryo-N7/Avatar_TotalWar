@@ -117,6 +117,12 @@ resources
 
 - Add settlment on south side of serpent's pass, west of Full Moon's Haven, as either Rebel or EK start.
 
+x 129 y 96
+80 93 177
+
+resources
+
+
 
 
 ----------------------------------
