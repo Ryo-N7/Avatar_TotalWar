@@ -105,6 +105,8 @@ resources
 99 92
 92 87
 
+make REBEL instead of FN?
+
 
 - Add settlement between Tokjin and Senlin coast settlement along the narrow strait, closer to northern edge. Port along middle of coastline.
 

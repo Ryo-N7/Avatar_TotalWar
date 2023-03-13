@@ -45,7 +45,7 @@ get_character_info <- function(bender_url) {
     gender_is <- scrape(session2) %>%
       html_nodes(".portable-infobox") %>%
       html_text() %>%
-      stringr::str_extract("Female|Male") ## Some are "Non-binary" or gender isn't listed
+      stringr::str_extract("Female|Male|Man|Woman") ## Some are "Non-binary" or gender isn't listed
 
     cat(paste0("\nGender: ", gender_is))
 
@@ -91,8 +91,40 @@ session2 <- bow("https://avatar.fandom.com/wiki/Azula")
 gender_is <- scrape(session2) %>%
   html_nodes(".portable-infobox") %>%
   html_text() %>%
-  stringr::str_extract("Female|Male") ## Some are "Non-binary" or gender isn't listed
+  stringr::str_extract("Female|Male|Man|Woman") ## Some are "Non-binary" or gender isn't listed
 
+
+
+## one nation
+bender_url <- earth_url
+bender_label <- str_extract(bender_url, "Fire|Earth|Water|Air")
+
+cat(paste0("\nStarting: ", bender_label, "!\n"))
+## Get name and page link
+session <- bow(bender_url)
+
+char_link <- scrape(session) %>%
+  html_nodes(".category-page__member-link") %>%
+  html_attr("href")
+
+char_name <- scrape(session) %>%
+  html_nodes(".category-page__member-link") %>%
+  html_text()
+
+base_url <- "https://avatar.fandom.com/"
+
+earth_df <- data.frame(
+  char_link,
+  char_name
+) %>%
+  ## Strip out 'Category:' pages that aren't single character page links
+  filter(!str_detect(char_link, "Category")) %>%
+  mutate(char_link = paste0(base_url, char_link))
+
+cat("\nNames and page link done!\n")
+
+
+## find all genders at once
 
 earth_namegender_df <- map(
   earth_df$earth_link,
@@ -103,13 +135,6 @@ earth_namegender_df <- map(
 beepr::beep(8)
 
 saveRDS(earth_namegender_df, file = "data/earth_namegender_df.RDS")
-
-
-
-
-
-
-
 
 
 
