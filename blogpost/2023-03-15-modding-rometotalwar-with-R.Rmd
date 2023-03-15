@@ -232,6 +232,8 @@ get_character_info <- function(bender_url) {
 }
 ```
 
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/char_names_script_run.PNG)
+
 You can see the complete script on GitHub [here](https://github.com/Ryo-N7/Avatar_TotalWar/blob/main/scripts/scrape_avatar_wiki.R).
 
 From here I basically shoved all these character names by nation/tribe into the game's character files using `NotePad++` since most of the game is built on simple text files so it's very easy to mod! The model/map rendering and stuff is obviously much harder though.
