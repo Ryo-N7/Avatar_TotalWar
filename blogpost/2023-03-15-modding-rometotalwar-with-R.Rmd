@@ -19,15 +19,17 @@ This blog post will be on a very weird mash-up of a few of my interests, Rome: T
 
 - A turn-based strategy RPG game set in the early years of the Roman Republic that was released back in 2004. There's both a campaign map where you do management (akin to say, Civ or EU games) but a major difference to those games is that you can also fight the battles yourself on the battle map with the troops you've recruited. 
 
-![](rtw-campaign.jpg)
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/rtw-campaign.jpg)
 
-![](rtw-battle.jpg)
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/rtw-battle.jpg)
 
 - It's probably the game I've played the most, ever. Yes, even more than FIFA actually (I haven't played FIFA in nearly a decade now...). I have the original CD version that I bought when I lived in Israel, the Steam version which I play on today, and I also got the Re-mastered version as that's the version that works with the Avatar mod. Despite newer games in the series and lots of other games in general, I just keep coming back to it over the past 20 years!
 
 ## __What is Avatar: The Last Airbender?__
 
 - An animated TV series from the mid-2000s about a group of teenagers from various "tribes/nations" who set out to restore balance and harmony to their world which has been ravaged by war for the past 100 years.
+
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/avatar-logo.png)
 
 - It's actually better if you just watch the 45-second opening as it sets the scene extremely well in a succinct manner:
 
@@ -41,9 +43,9 @@ This blog post will be on a very weird mash-up of a few of my interests, Rome: T
 
 - [The Last Airbender: Total War, Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2817235421)
 
-![](av-tw-campaign.jpg)
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/av-tw-campaign.jpg)
 
-![](av-tw-azula.jpg)
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/av-tw-azula.jpg)
 
 - Note: I'm __not__ the creator of the mod, just helping out. 
 
@@ -57,7 +59,7 @@ When I first came across this mod, I realized pretty quickly that there weren't 
 
 First, let's load some R packages: 
 
-```{r}
+```{r, message=FALSE}
 library(rvest)   ## web-scraping
 library(polite)  ## web-scraping, politely
 library(dplyr)   ## clean data
@@ -65,7 +67,7 @@ library(purrr)   ## clean data and iteration
 library(stringr) ## string/text cleaning
 ```
 
-Before I jumped into creating a big workflow, I wanted to test how to grab the data I need based on one page.
+Before I jumped into creating a big workflow, I wanted to test how to grab the data I need based on one page, so let's take a look at Azula's page.
 
 ```{r}
 ## Check out robots.txt and see if URL link is scrape-able
@@ -86,7 +88,7 @@ Great! After flipping through a few character pages at random, this is how these
 
 NOTE: Since the time I actually worked on this last October, there's been quite a few weird changes in the pages where instead of simply listing gender as "Male" or "Female" or otherwise, some pages keep the "Male"/"Female" set while others have "Man" or "Woman" instead... so the consistency across character pages got worse, wonderful!
 
-So to expand this search across all characters, I tried to find a pages that listed them all. There wasn't one but there are a couple of pages that lists all characters split by tribe/nation which is still more than enough for what I wanted to do.
+So to expand this search across all characters, I tried to find a page that listed them all. There wasn't one but there are a couple of pages that lists all characters split by tribe/nation which is still good enough for what I wanted to do.
 
 ```{r}
 earth_url <- "https://avatar.fandom.com/wiki/Category:Earth_Kingdom_characters"
@@ -131,9 +133,10 @@ cat("\nNames and page link done!\n")
 ```
 
 ```{r, echo=FALSE}
-earth_df <- readRDS(here::here("data/earth_namegender_df.RDS"))
-earth_namegender_df <- earth_df
-earth_df <- earth_df[, !(colnames(earth_df) == "gender")]
+earth_namegender_df <- read.csv(file = "https://raw.githubusercontent.com/Ryo-N7/Avatar_TotalWar/main/data/earth_namegender_df.csv", )
+earth_namegender_df <- earth_namegender_df[, !(colnames(earth_namegender_df) == "X")]
+
+earth_df <- earth_namegender_df[, !(colnames(earth_namegender_df) == "gender")]
 ```
 
 ```{r}
@@ -142,7 +145,7 @@ tail(earth_df, 10)
 Then use that information to:
 
 - Jump into each character page to find their gender
-- Bind all individual character info into one data.frame and save that as an `.RDS` file
+- Bind all individual character info into one data.frame and save that as a file
 
 ```{r, eval=FALSE}
 ## find all genders at once
@@ -235,7 +238,7 @@ From here I basically shoved all these character names by nation/tribe into the 
 
 Aaand voila!
 
-![](av-tw-family.jpg)
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/av-tw-family.jpg)
 
 ## Generating a "turns-per-year" script through R's text generation capabilities
 
@@ -254,13 +257,15 @@ turn_df <- data.frame(
   turn_num = seq(0, 799)
 )
 
+glimpse(turn_df)
+
 season_change_turn <- seq(2, 800, by = 4)
 winter_turn <- seq(3, 800, by = 4)
 ```
 
 From here I open up a file to write my code into: `4tpy_AV.txt`. From there I use `cat()` calls to push text into the file that I created, first some comments describing what this script is doing.
 
-```{r}
+```{r, eval=FALSE}
 fileName <- sprintf("4tpy_AV.txt")
 
 message(sprintf("Writing %s...", fileName))
@@ -286,7 +291,7 @@ cat(file = r,
 
 From here, it's a giant `for` loop of setting the text snippet for each turn/season.
 
-```{r}
+```{r, eval=FALSE}
 ## for loop
 for (i in 1:nrow(turn_df)) { # 1:nrow(turn_df)
   # print(turn_df[i, 1]) # cons_date
@@ -422,7 +427,7 @@ for (i in 1:nrow(turn_df)) { # 1:nrow(turn_df)
 close(r)
 ```
 
-![](4tpy-script.PNG)
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/4tpy-script.PNG)
 
 You can find the actual script file [here](https://github.com/Ryo-N7/Avatar_TotalWar/blob/main/scripts/4tpy_AV.txt).
 
@@ -446,7 +451,7 @@ For those curious, here are a few other things I did/am working on for the mod:
 
 - Added new settlements (no R, unfortunately... mostly me getting to grips with good ol' MS Paint and GIMP)
 
-![](av-tw-new-towns.jpg)
+![](../assets/2023-03-15-modding-rometotalwar-with-R_files/av-tw-new-towns.jpg)
 
 - Added new character portraits. Like with the character names, the mod was just recycling the same 8 or so pics which got old pretty fast once you started growing your empire and gained more generals/family members.
 
